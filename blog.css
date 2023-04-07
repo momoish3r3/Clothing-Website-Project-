@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.vid{
+    height: auto;
+    width: 100vw;
+}
+/* .planes{ */
+    /* height: 60vh;
+    width: 100vw;
+    display: inline-flex;
+    justify-content: space-around;
+    border: 2px solid black;
+
+}
+.planes img,.planes .txt{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 40vw;
+} */
+.posts img{
+    height: auto;
+    width: 100vw;
+}
+
+.chat{
+    height: 64px;
+    width: 64px;
+    position: fixed;
+    z-index: 2;
+    bottom: 10px;
+    left: 25px;
+   background-color: white;
+   border-radius: 20%;
+}
+.newsletter{
+    width: 100vw;
+    height: 60vh;
+    font-family: 'Unbounded', cursive;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: xx-large;
+    
+}
+.newsletter .right img{
+    height: 60vh;
+    width: 40vw;
+    object-fit:contain;
+}
+.newsletter .left {
+    height: 60vh;
+    width: 40vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: capitalize;
+
+}
+.newsletter h2{
+    margin-bottom: auto;
+}
+.newsletter p{
+    margin-bottom: auto;
+}
+.newsletter input{
+    margin-bottom: auto;
+}
+.newsletter p span{
+    color: red;
+    animation: 3s colchange infinite;
+}

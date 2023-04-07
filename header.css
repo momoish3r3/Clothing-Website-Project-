@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header nav{
+    display: inline-flex;
+    background-color: black;
+    color: white;
+    height: 12vh;
+    width: 100vw;
+    justify-content: space-between;
+}
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+.items{
+    display: inline-flex;
+    height: 12vh;
+    width: 10vw;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Unbounded', cursive;
+    text-decoration: none;
+
+}
+header nav div  a   {
+    text-decoration: none;
+    color: white;
+}
+header nav div  a:hover  {
+    text-decoration: none;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.5s;
+    color:red;
+}
+.logo{
+    height: 12vh;
+    width: 10vw;
+}
+.items:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.5s;
+    color: red;
+}
+#mainban1{
+    height: auto;
+    width: 100vw;
+}
+.logo:hover{
+    color: red;
+    cursor: pointer;
+    opacity: 0.7;
+}
+#logu{
+    height: 12vh;
+} 
+

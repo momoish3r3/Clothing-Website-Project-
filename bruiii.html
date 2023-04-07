@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "angular.min.js"></script>
+</head>
+<body ng-app >
+    <div ng-controller="CartController">
+        <h1>Your Cart</h1>
+        <ul>
+          <li ng-repeat="item in cartItems">
+            <span>{{item.name}}</span>
+            <span>{{item.price | currency}}</span>
+            <button ng-click="removeItem(item)">Remove</button>
+          </li>
+        </ul>
+        <p>Total: {{getCartTotal() | currency}}</p>
+        <button ng-click="checkout()">Checkout</button>
+      </div>
+      
+      <script>
+          app.controller('CartController', function($scope) {
+  $scope.cartItems = [
+    { name: 'Product 1', price: 9.99 },
+    { name: 'Product 2', price: 19.99 },
+    { name: 'Product 3', price: 29.99 }
+  ];
+
+  $scope.removeItem = function(item) {
+    var index = $scope.cartItems.indexOf(item);
+    if (index !== -1) {
+      $scope.cartItems.splice(index, 1);
+    }
+  };
+
+  $scope.getCartTotal = function() {
+    var total = 0;
+    angular.forEach($scope.cartItems, function(item) {
+      total += item.price;
+    });
+    return total;
+  };
+
+  $scope.checkout = function() {
+    // Perform checkout logic here
+  };
+});
+
+      </script>
+      
+
+</body>
+</html>
